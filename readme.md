@@ -1,27 +1,23 @@
-# pluralsight-building-essential-ui-data-elements-in-react
+# pluralsight-whats-new-in-react18
 
-The master branch here is the latest updates to the Pluralsight course <b>Building Essential UI Data Elements in React</b>
+The master branch here is the latest updates to the Pluralsight course <b>What's New in React 18</b>
 
 
-# Course Code for [Building Essential UI Data Elements in React](https://app.pluralsight.com/library/courses/react-17-building-essential-ui-data-elements) on Pluralsight
+# Course Code for [What's New in React 18](https://app.pluralsight.com/library/courses/whats-new-in-react18) on Pluralsight
 
 <br/>
 This GitHub repo includes the final code for all the modules in the course 
 
 ## Course Description
 
-In this course, Building Essential UI Data Elements in React, you’ll learn to. Build the front end browser based user interfaces, and the basics of the backend processing on a node server to read and update data presented in the front end React web application.
-
-First, you’ll explore the three most common data relationship scenarios used when building data backed real world React applications.  The three data relationships we will concern ourselves with are single table, 1-to-one, 1-to-many, and many-to-many.
-
-Next, you’ll discover all the details necessary to build a client only version using those relationships.  Finally, you’ll learn how to build out a complete backend in Node that supports persisting the data from all three relationships, through a REST server built in node and finally persisted backed to the the database Sqlite.
-
-When you are finished with the course, you’ll have the skills and knowledge necessary to build real world React applications that manage typical data scenarios found in both small home grown web site projects, as well as full enterprise applications.
+In this course, What’s New in React 18, you’ll learn what the new features are in the released version of React 18. You’ll also learn how they will help you update old and create new apps in React that both give the browser user a better experience, as well as use less resources on the user’s computer.
+ 
+First, you’ll explore the new features in the React 18 release.  Next, you’ll discover how straight forward it is to update your existing apps as well as create new ones that take advantage of the new React 18 features.  Those features include the all new Suspense running in Concurrent React as well as the React hooks that leverage concurrent rendering. Finally, you’ll learn how to combine multiple components together using the new Concurrent React features to make your apps better in every way. When you’re finished with this course, you’ll have the skills and knowledge of the new features in React 18 so you can take advantage of these in all your existing and new React apps.
 
 ## Getting Started
 1. **Install [Node 16 (latest-verson) with NPM 17](https://nodejs.org)**.
-2. **Clone this repository.** - `https://github.com/pkellner/pluralsight-building-essential-ui-data-elements-in-react` or [download the zip](https://github.com/pkellner/pluralsight-building-essential-ui-data-elements-in-react/archive/master.zip)
-3. **Set your default directory to which module you want (example: `cd m3-building-a-notes-react-app` - `cd clip-03-nextjs-eslint-setup`
+2. **Clone this repository.** - `https://github.com/pkellner/pluralsight-whats-new-in-react18` or [download the zip](https://github.com/pkellner/pluralsight-whats-new-in-react18/archive/master.zip)
+3. **Set your default directory to which module you want (example: `cd m3-hands-on-moving-to-concurrent-rendering` - `cd clip-03-nextjs-eslint-setup`
 4. **Install Node Packages with Dependencies.** - `npm install`
 
 
