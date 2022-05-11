@@ -17,7 +17,7 @@ First, you’ll explore the new features in the React 18 release.  Next, you’l
 ## Getting Started
 1. **Install [Node 16 (latest-verson) with NPM 17](https://nodejs.org)**.
 2. **Clone this repository.** - `https://github.com/pkellner/pluralsight-whats-new-in-react18` or [download the zip](https://github.com/pkellner/pluralsight-whats-new-in-react18/archive/master.zip)
-3. **Set your default directory to which module you want (example: `cd m3-hands-on-moving-to-concurrent-rendering` - `cd clip-03-nextjs-eslint-setup`
+3. **Set your default directory to which module you want (example: `cd m3-hands-on-moving-to-concurrent-rendering` - `cd m4-hands-on-with-the-new-react-hooks`
 4. **Install Node Packages with Dependencies.** - `npm install`
 
 
@@ -39,7 +39,7 @@ That will launch the web server on port 3000 where you can browser to it at the 
 
 ## Background
 
-This course uses the Next.js framework as a demonstraton vehicle for React Hooks. If you want to know more about Next.js you should watch my other course on Pluralsight titled "Building Server-side Rendered React Apps for Beginners". You can find it [here](https://www.pluralsight.com/courses/building-server-side-rendered-react-apps-beginners). 
+This course uses the Next.js framework as a demonstraton vehicle for React Hooks. If you want to know more about Next.js you should watch my other course on Pluralsight titled "Building Server-side Rendered React Apps for Beginners". You can find it [here](https://www.pluralsight.com/courses/whats-new-in-react18). 
 
 ## Repo or Course Issues
 
