@@ -1,8 +1,6 @@
 import "./App.css";
 import { useState, useDeferredValue, memo, useEffect } from "react";
-//import { fetchCityListData } from "./dataApi/fetchCityListData";
-import {fetchCities} from "./data/cities";
-//import { Suspense } from "react";
+import { fetchCities } from "./data/cities";
 const displayCount = 1000;
 
 // code similar to example by React Team: https://github.com/reactwg/react-18/discussions/129#discussioncomment-2439125
@@ -39,19 +37,16 @@ const CityListResult = memo(({ cities, searchText }) => (
 ));
 
 function RenderComponent() {
-  //const cities = resource?.cities.read();
-  
   const [cities, setCities] = useState([]);
-  
+
   useEffect(() => {
     fetchCities(displayCount).then((data) => {
       setCities(data);
-    })
-  },[])
+    });
+  }, []);
 
   const [searchText, setSearchText] = useState("");
   const deferredText = useDeferredValue(searchText);
-
   const searchValue = searchText; // this should be searchText or deferredText
 
   return (
@@ -80,12 +75,7 @@ function RenderComponent() {
 }
 
 function App() {
-  //const resource = fetchCityListData(displayCount);
-  return (
-    // <Suspense fallback={<div>Loading...</div>}>
-      <RenderComponent />
-    // </Suspense>
-  );
+  return <RenderComponent />;
 }
 
 export default App;
