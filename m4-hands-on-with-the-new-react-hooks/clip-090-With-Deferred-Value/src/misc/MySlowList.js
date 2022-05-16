@@ -16,21 +16,23 @@ function ListItem({ children }) {
   return <div className="ListItem">{children}</div>;
 }
 
-export default memo(function MySlowList({ searchText }) {
-  let items = [];
-  for (let i = 0; i < 80; i++) {
-    items.push(
-      <ListItem key={i}>
-        Result #{i} for "{searchText}"
-      </ListItem>
-    );
-  }
+export default memo(function MySlowList({ searchText, cities }) {
   return (
     <>
       <p>
         <b>Results for "{searchText}":</b>
       </p>
-      <ul className="List">{items}</ul>
+      <ul className="List">
+        {cities
+          .filter(({name}) => {
+            return (
+              searchText.length === 0 ||
+              name.toLowerCase().includes(searchText.toLowerCase())
+            );
+          }).map((city) => {
+          return <ListItem key={city.id}>{city.name}</ListItem>;
+        })}
+      </ul>
     </>
   );
 });

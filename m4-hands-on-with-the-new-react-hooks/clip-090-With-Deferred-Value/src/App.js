@@ -6,7 +6,7 @@ import { DisplayCountProvider } from "./contexts/DisplayCountContext";
 import CityDisplayCount from "./ui/CityDisplayCount";
 import CityDetail from "./ui/CityDetail";
 
-const displayCount = 100;
+const displayCount = 500;
 function App() {
   return (
     <DisplayCountProvider initialDisplayCount={displayCount}>

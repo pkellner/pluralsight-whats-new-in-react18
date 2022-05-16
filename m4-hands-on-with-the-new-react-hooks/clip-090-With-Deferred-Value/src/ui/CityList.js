@@ -48,7 +48,7 @@ export default function CityList({ children }) {
                 />
               </li>
               {/*<CityListResults cities={cities} searchText={deferredText} />*/}
-              <MySlowList searchText={deferredText} />
+              <MySlowList searchText={deferredText} cities={cities} />
             </ul>
           </div>
           <div className="col-9">

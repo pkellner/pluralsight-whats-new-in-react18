@@ -6,7 +6,7 @@ export default function CityDisplayCount() {
 
   return (
     <div className="btn-group" role="group" aria-label="Basic example">
-      {[3, 5, 10,100].map((buttonCnt) => {
+      {[3, 5, 10,500].map((buttonCnt) => {
         return (
           <button
             type="button"
