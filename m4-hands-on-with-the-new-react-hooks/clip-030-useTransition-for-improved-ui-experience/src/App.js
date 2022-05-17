@@ -9,15 +9,12 @@ import CityDetail from "./ui/CityDetail";
 const displayCount = 5;
 function App() {
   return (
-    <DisplayCountProvider
-      initialDisplayCount={displayCount}>
+    <DisplayCountProvider initialDisplayCount={displayCount}>
       <CityDisplayCount />
       <CityListStoreProvider>
-        <Suspense fallback=
-          {<div>Loading...</div>}>
+        <Suspense fallback={<div>Loading...</div>}>
           <CityList>
-            <Suspense
-              fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div>Loading...</div>}>
               <CityDetail />
             </Suspense>
           </CityList>

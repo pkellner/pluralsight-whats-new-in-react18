@@ -5,19 +5,19 @@ import { CityListStoreProvider } from "./contexts/CityListStoreContext";
 import { DisplayCountProvider } from "./contexts/DisplayCountContext";
 import CityDisplayCount from "./ui/CityDisplayCount";
 import CityDetail from "./ui/CityDetail";
+import UseTransitionHook from "./UseTransitionHook";
 
 const displayCount = 5;
 function App() {
+  return <UseTransitionHook />;
+
   return (
-    <DisplayCountProvider
-      initialDisplayCount={displayCount}>
+    <DisplayCountProvider initialDisplayCount={displayCount}>
       <CityDisplayCount />
       <CityListStoreProvider>
-        <Suspense fallback=
-          {<div>Loading...</div>}>
+        <Suspense fallback={<div>Loading...</div>}>
           <CityList>
-            <Suspense
-              fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div>Loading...</div>}>
               <CityDetail />
             </Suspense>
           </CityList>

@@ -4,8 +4,7 @@ import { CityDetailStoreProvider } from "../contexts/CityDetailStoreContext";
 import CityButton from "./CityButton";
 
 export default function CityList({ children }) {
-  const { getCities } =
-    useContext(CityListStoreContext);
+  const { getCities } = useContext(CityListStoreContext);
   const cities = getCities();
 
   return (
