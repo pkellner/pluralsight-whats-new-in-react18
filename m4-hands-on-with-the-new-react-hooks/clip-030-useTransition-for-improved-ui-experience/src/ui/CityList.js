@@ -15,7 +15,8 @@ export default function CityList({ children }) {
           <div className="col-3">
             <ul className="list-group city--list">
               <li className="list-group-item city--header">
-                City List {isPending ? "updating..." : ""}</li>
+                City List {isPending ? "updating..." : ""}
+              </li>
               {cities.map((rec) => (
                 <Fragment key={rec.id}>
                   <CityButton city={rec} />
