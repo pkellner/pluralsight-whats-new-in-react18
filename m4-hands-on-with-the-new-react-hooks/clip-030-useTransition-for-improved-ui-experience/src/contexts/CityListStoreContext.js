@@ -1,18 +1,12 @@
-import {
-  createContext,
-  useContext,
-  useState,
-  useEffect,
-  useTransition,
-} from "react";
+import { createContext, useContext, useState, useEffect, useTransition } from "react";
 import { fetchCityListData } from "../dataApi/fetchCityListData";
 import { DisplayCountContext } from "./DisplayCountContext";
 
 export const CityListStoreContext = createContext();
 
 function CityListStoreProvider({ children }) {
-  const { displayCount } = useContext(DisplayCountContext);
   const [isPending, startTransition] = useTransition();
+  const { displayCount } = useContext(DisplayCountContext);
   const [resource, setResource] = useState(fetchCityListData(displayCount));
 
   useEffect(() => {
