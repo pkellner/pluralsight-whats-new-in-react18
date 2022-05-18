@@ -1,10 +1,19 @@
-import { useContext, useState } from "react";
+import { useContext, useState, memo, useDeferredValue } from "react";
 import { CityListStoreContext } from "../contexts/CityListStoreContext";
 import { CityDetailStoreProvider } from "../contexts/CityDetailStoreContext";
 
+// code similar to example by React Team: https://github.com/reactwg/react-18/discussions/129#discussioncomment-2439125
+
 const ListItem = ({ id, name }) => {
   let now = performance.now();
-  while (performance.now() - now < 5) {} // intentially made to drag component down
+  while (performance.now() - now < 5) {
+    // This loop is intentially here just to drag the component
+    // down in a hard running loop.  It could represent something
+    // like a complex calculation involving drawing a city shape
+    // or something else compute intensive. It's mean to represent
+    // work that can not be easily optimized or removed.
+  } 
+
   return (
     <li key={id} className="list-group-item list-group-item-action">
       {name}
@@ -12,7 +21,7 @@ const ListItem = ({ id, name }) => {
   );
 };
 
-const CityListResult = ({ cities, searchText }) => (
+const CityListResult = memo(({ cities, searchText }) => (
   <>
     {cities
       .filter(({ name }) => {
@@ -25,12 +34,13 @@ const CityListResult = ({ cities, searchText }) => (
         <ListItem key={rec.id} id={rec.id} name={rec.name} />
       ))}
   </>
-);
+));
 
 export default function CityList({ children }) {
   const { getCities, isPending } = useContext(CityListStoreContext);
   const cities = getCities();
   const [searchText, setSearchText] = useState("");
+  const deferredText = useDeferredValue(searchText);
 
   return (
     <CityDetailStoreProvider initialCityId={cities[0].id}>
@@ -52,9 +62,9 @@ export default function CityList({ children }) {
                 />
               </li>
               <li className="list-group-item city--header">
-                Search Text: {searchText}
+                Search Text: {deferredText}
               </li>
-              <CityListResult cities={cities} searchText={searchText} />
+              <CityListResult cities={cities} searchText={deferredText} />
             </ul>
           </div>
         </div>
