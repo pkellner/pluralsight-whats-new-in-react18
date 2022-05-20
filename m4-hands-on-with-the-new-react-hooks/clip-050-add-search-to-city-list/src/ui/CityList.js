@@ -3,8 +3,6 @@ import { CityListStoreContext } from "../contexts/CityListStoreContext";
 import { CityDetailStoreProvider } from "../contexts/CityDetailStoreContext";
 
 const ListItem = ({ id, name }) => {
-  let now = performance.now();
-  while (performance.now() - now < 5) {} // intentially made to drag component down
   return (
     <li key={id} className="list-group-item list-group-item-action">
       {name}
