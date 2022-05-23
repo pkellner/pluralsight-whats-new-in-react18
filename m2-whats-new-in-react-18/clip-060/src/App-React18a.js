@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+
 function App({ displayCount }) {
   const specialPromiseResource = createSpecialPromise(
     `/api/cities?displayCount=${displayCount}`

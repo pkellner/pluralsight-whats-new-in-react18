@@ -1,5 +1,5 @@
 import { CityDetailStoreContext } from "../contexts/CityDetailStoreContext";
-import { useContext, Suspense } from "react";
+import { Suspense, useContext } from "react";
 
 function CityInfo() {
   const { getCityInfo } = useContext(CityDetailStoreContext);

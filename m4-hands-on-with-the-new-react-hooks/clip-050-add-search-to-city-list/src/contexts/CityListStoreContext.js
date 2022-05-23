@@ -1,8 +1,8 @@
 import {
   createContext,
   useContext,
-  useState,
   useEffect,
+  useState,
   useTransition,
 } from "react";
 import { fetchCityListData } from "../dataApi/fetchCityListData";

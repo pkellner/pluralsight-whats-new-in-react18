@@ -1,4 +1,4 @@
-import { useContext, useState, memo, useDeferredValue } from "react";
+import { memo, useContext, useDeferredValue, useState } from "react";
 import { CityListStoreContext } from "../contexts/CityListStoreContext";
 import { CityDetailStoreProvider } from "../contexts/CityDetailStoreContext";
 

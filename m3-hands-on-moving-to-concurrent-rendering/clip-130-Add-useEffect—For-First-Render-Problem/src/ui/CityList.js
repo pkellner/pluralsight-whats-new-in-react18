@@ -1,4 +1,4 @@
-import { useContext, Fragment } from "react";
+import { Fragment, useContext } from "react";
 import { CityListStoreContext } from "../contexts/CityListStoreContext";
 import { CityDetailStoreProvider } from "../contexts/CityDetailStoreContext";
 import CityButton from "./CityButton";
