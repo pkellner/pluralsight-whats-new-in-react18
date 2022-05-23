@@ -3,7 +3,7 @@
 The master branch here is the latest updates to the Pluralsight course <b>What's New in React 18</b>
 
 
-# Course Code for [What's New in React 18](https://app.pluralsight.com/library/courses/whats-new-in-react18) on Pluralsight
+# Course Code for [What's New in React 18](https://www.pluralsight.com/courses/react-18-whats-new) on Pluralsight
 
 <br/>
 This GitHub repo includes the final code for all the modules in the course 
