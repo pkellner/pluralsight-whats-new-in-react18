@@ -13,8 +13,10 @@ function App({ displayCount }) {
 function RenderComponent({ specialPromiseResource }) {
   const cities = specialPromiseResource.cities.read();
   return (
-    <ul>{cities.map((rec) => (
-        <li key={rec.id}>{rec.name}</li>))}
+    <ul>
+      {cities.map((rec) => (
+        <li key={rec.id}>{rec.name}</li>
+      ))}
     </ul>
   );
 }
@@ -24,6 +26,6 @@ function createSpecialPromise(url) {
     // wrapPromise does work of returning data
     //  or throws special return handled internally
     //  by suspense. (next module for details...)
-    cities: wrapPromise(cityPromise)
-  }
+    cities: wrapPromise(cityPromise),
+  };
 }

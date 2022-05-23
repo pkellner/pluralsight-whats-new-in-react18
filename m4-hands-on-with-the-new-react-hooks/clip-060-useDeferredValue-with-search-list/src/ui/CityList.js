@@ -12,7 +12,7 @@ const ListItem = ({ id, name }) => {
     // like a complex calculation involving drawing a city shape
     // or something else compute intensive. It's mean to represent
     // work that can not be easily optimized or removed.
-  } 
+  }
 
   return (
     <li key={id} className="list-group-item list-group-item-action">
