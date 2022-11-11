@@ -8,6 +8,14 @@ The master branch here is the latest updates to the Pluralsight course <b>What's
 <br/>
 This GitHub repo includes the final code for all the modules in the course 
 
+# Recently Released Courses From Peter Kellner
+
+| **Course**                                                                           | Release Date  |
+|--------------------------------------------------------------------------------------|---------------|
+| **[Using Hooks in React 18](https://pluralsight.com/courses/react-18-using-hooks/)** | November 2022 |
+| **[What is React](https://pluralsight.com/courses/react-what-is/)**                  | August 2022   |
+
+
 ## Course Description
 
 In this course, What’s New in React 18, you’ll learn what the new features are in the released version of React 18. You’ll also learn how they will help you update old and create new apps in React that both give the browser user a better experience, as well as use less resources on the user’s computer.
